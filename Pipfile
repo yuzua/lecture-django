@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==2.2.2"
+pytz = "==2021.1"
+sqlparse = "==0.4.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
