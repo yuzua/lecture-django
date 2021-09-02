@@ -1,3 +1,8 @@
 # lecture-django
 # WindowsのDockerの設定
 * コントロールパネルの設定(Hyper-VのチェックOFF,Linux用WindowsサブシステムのチェックON,仮想マシンプラットフォームのチェックON)
+# VSCodeの設定
+* ※管理者で入った場合、pathに--extensions-dir=".¥extensions"を追加
+# memo
+* 設定より規約・・・調べる
+* Modemls.pyを使うメリット・・・①MySQLやPostgreSQLの違いを自動的に処理できるから②ORマッピング
