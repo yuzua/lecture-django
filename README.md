@@ -10,3 +10,5 @@
 * 適当なファイル作成→sample.pyの作成(pythonを認識させる)→$python -m venv .env→$.\.env\Scripts\Activate.ps1→ctrl+shift+pでpython~(.env)を選択 ※初めて使う場合 $Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -force
 # pipenvを使ったdjango-allauthの使い方
 * $pipenv install django-allauth→cp -r /root/.local/share/virtualenvs/Django-uBqtMRMC/lib/python3.9/site-packages/allauth/templates/account/ /Django/diary/templates ※find ./ -name allauthでテンプレートの場所を検索可能
+# requirements.txtを使用する場合
+* requirements.txtを作成→$pip install -r .\requirements.txt でインストールした内容を管理
