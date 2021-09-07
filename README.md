@@ -14,3 +14,5 @@
 * requirements.txtを作成→$pip install -r .\requirements.txt でインストールした内容を管理
 # Djangoの拡張
 * $pip install pylint_django...続きは動画参照
+
+* memo https://github.com/jkingyens/docker4xcode
