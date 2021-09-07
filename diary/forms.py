@@ -8,3 +8,12 @@ class InquiryForm(forms.Form):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+        self.fields['name'].widget.attrs['class'] = 'form-control col-9'
+        self.fields['name'].widget.attrs['placeholder'] = 'お名前をここに入力して下さい'
+        self.fields['email'].widget.attrs['class'] = 'form-control col-11'
+        self.fields['email'].widget.attrs['placeholder'] = 'メールアドレスをここに入力して下さい'
+        self.fields['title'].widget.attrs['class'] = 'form-control col-11'
+        self.fields['title'].widget.attrs['placeholder'] = 'タイトルをここに入力して下さい'
+        self.fields['message'].widget.attrs['class'] = 'form-control col-12'
+        self.fields['message'].widget.attrs['placeholder'] = 'メッセージをここに入力して下さい'
