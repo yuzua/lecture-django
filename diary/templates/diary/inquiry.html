@@ -1,9 +1,9 @@
 {% extends 'diary/base.html' %}
 {% block title %} お問い合わせ!|Private Diary {% endblock %}
 {% block contents %}
-<section id="scroll">
-    <div class="container px-5">
-        <div class="row gx-5 align-items-center">
+<section id="container">
+    <div class="row">
+        <div class="my-div-style">
             <form method="POST">
                 {% csrf_token %}
 
