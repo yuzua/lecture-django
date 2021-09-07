@@ -12,3 +12,5 @@
 * $pipenv install django-allauth→cp -r /root/.local/share/virtualenvs/Django-uBqtMRMC/lib/python3.9/site-packages/allauth/templates/account/ /Django/diary/templates ※find ./ -name allauthでテンプレートの場所を検索可能
 # requirements.txtを使用する場合
 * requirements.txtを作成→$pip install -r .\requirements.txt でインストールした内容を管理
+# Djangoの拡張
+* $pip install pylint_django...続きは動画参照
