@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.contrib import messages
 from django.views import generic
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
+from .models import Diary
 from .forms import InquiryForm
 import logging
 
@@ -21,3 +23,11 @@ class InquiryView(generic.FormView):
         messages.success(self.request,'メッセージを送信しました。')
         logger.info('Inquiry set by {}'.format(form.cleaned_data['name']))
         return super().form_valid(form)
+
+class DiaryListView(LoginRequiredMixin, generic.ListView):
+    model = Diary
+    template_name = 'diary_list.html'
+
+    def get_queryset(self):
+        diaries = Diary.objects.filter(user=self.request.user).order_by('-created_at') 
+        return diaries
