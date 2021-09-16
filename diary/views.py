@@ -58,10 +58,11 @@ class DiaryCreateView(LoginRequiredMixin, generic.CreateView):
 class DiaryUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Diary
     template_name = 'diary/diary_update.html'
+    success_url = reverse_lazy('diary:diary_list')
     form_class = DiaryCreateForm
 
-    def get_success_url(self):
-        return reverse_lazy('diary:diary_detail',kwargs={'pk':self.kwargs['pk']})
+    # def get_success_url(self):
+    #     return reverse_lazy('diary:diary_detail',kwargs={'pk':self.kwargs['pk']})
 
     def form_valid(self, form):
         messages.success(self.request,'日記を更新しました')
